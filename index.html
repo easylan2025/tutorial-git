@@ -6,6 +6,63 @@
     <title>tutorial git</title>
 </head>
 <body>
-    eita nois a primeria pagina ai!
+<h1> Breve tutorial de git</h1>
+
+
+<p>git init → cria o repositório local.
+
+git add . → marca os arquivos que você quer versionar.
+
+git commit -m "mensagem" → salva as mudanças no histórico local.
+
+git remote add origin <URL> → conecta seu repositório local ao GitHub.
+
+git push -u origin main → envia para o GitHub.
+</p>
+<p>1. Crie uma pasta nova no seu PC
+
+Exemplo:
+
+mkdir git-treino
+cd git-treino
+
+2. Inicie o Git nessa pasta
+git init
+
+
+👉 Isso cria a pasta .git, onde ficam os históricos.
+
+3. Crie um arquivo de teste
+echo "Hello Git" > index.html
+
+4. Adicione o arquivo ao controle do Git
+git add index.html
+
+5. Faça o primeiro commit
+git commit -m "primeiro commit"
+
+6. Crie um repositório vazio no GitHub
+
+Vá no GitHub → New Repository
+
+Dê o nome que quiser, ex.: tutorial-git
+
+NÃO marque “Add README” (deixe vazio, pra não dar conflito no push inicial).
+
+7. Conecte o repositório local ao GitHub
+git remote add origin https://github.com/seu-usuario/tutorial-git.git
+
+8. Envie seus arquivos para o GitHub
+
+Se sua branch for main (mais comum hoje em dia):
+
+git push -u origin main
+
+
+Se for master:
+
+git push -u origin master
+</p>
+
 </body>
 </html>
